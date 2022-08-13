@@ -14,7 +14,7 @@ export default function App() {
 
   // fetching data with axios when component mounts
   useEffect( () =>
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=8Zc8vruQ8HShTsmKIbnrtNrDkkkZOwcw&limit=20`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=8Zc8vruQ8HShTsmKIbnrtNrDkkkZOwcw&limit=20`)
     .then(response => {
       setData(response.data.data)
       setLoading(false)
