@@ -15,7 +15,7 @@ export default function SearchForm(props) {
   }
 
     return (
-      <form className="search-form" onSubmit={handleSubmit} >
+      <form className="search-form" autocomplete="off" onSubmit={handleSubmit} >
         <label className="is-hidden" htmlFor="search">Search</label>
         <input type="search"
               onChange={onSearchChange}
